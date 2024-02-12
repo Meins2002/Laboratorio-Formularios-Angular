@@ -1,0 +1,19 @@
+
+<form [formGroup]="formGroup" (submit)="onSubmit(formGroup.value)">
+  <!--  
+  <abel>Usuario</-!abel>
+  <input name="usuario" formControlName="usuario">
+  <label>Contraseña</label>
+  <input name="contrasena" type="password" formControlName="contrasena">
+  <input type="submit" value="Iniciar Sesión" [disabled]="!formGroup.valid" -->
+  <label for="usuario">Usuario:</label>
+  <input name="usuario" formControlName="usuario" id="usuario">
+
+  <label for="contrasena">Contraseña:</label>
+  <input name="contrasena" type="password" formControlName="contrasena" id="contrasena">
+
+</form>
+
+
+<router-outlet></router-outlet>
+|
